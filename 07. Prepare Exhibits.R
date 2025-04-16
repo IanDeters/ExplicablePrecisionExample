@@ -321,7 +321,6 @@ for (ThisVariable in ContinuousVariables)
     
   # Sort by the current values of the groups
   
-  #ContinuousSummary = rbind(ContinuousSummary, Summary[order(Summary$Group), c('Variable', 'Group', 'Minimum', 'Mean', 'Maximum', WeightVariable, OffsetVariable, Target, 'VariableEffect', 'Model'), with = FALSE])
   ContinuousSummary = rbind(ContinuousSummary, Summary[order(Summary$Value), c('Variable', 'Value', 'Minimum', 'Mean', 'Maximum', WeightVariable, OffsetVariable, Target, 'VariableEffect', 'Model'), with = FALSE])
 
 }
